@@ -1,0 +1,513 @@
+/* Theme Name: Rohix Website
+Author: MihaiMiY
+Author URI: http://www.rohix.com
+Author e-mail: 
+Version: 1
+Created: September 2015
+File Description:Main CSS file of the template */
+
+/* TABLE OF CONTENTS
+
+1) Typography
+2) Layout
+3) Social Links
+4) Navigation
+5) Banner
+*/
+
+/* 1 Typography
+----------------------------------------------------------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic,800,800italic);
+
+html
+{
+	height: 100%;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: #666666;
+	background-color: #ffffff;
+}
+
+a, a:hover, a:active, a:before, a:visited, a:link
+{
+	text-decoration: none;
+	color: #666666;
+}
+
+
+/* 2 Layout
+----------------------------------------------------------------------------- */
+
+.page-wrapper
+{
+	background-color: #ffffff;
+}
+
+.header-top 
+{
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #dadada;
+	-webkit-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.03) inset;
+	box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.03) inset;
+	font-size: 12px;
+}
+.header
+{
+	padding: 20px 0;
+	border-bottom: 1px solid #eaeaea;
+	background-color: #fff;
+}
+
+.header-left
+{
+	float: left;
+}
+
+.header-right
+{
+	float: right;
+}
+
+.header-right span
+{
+	padding: 0 10px 0 0;
+}
+
+.banner 
+{
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #eaeaea;
+}
+
+/* 3 Social icons block
+---------------------------------- */
+
+.social-links
+{
+	list-style: none;
+	font-size: 0;
+	padding: 0;
+	margin: 40px 0 20px 0;
+}
+
+.social-links li 
+{
+	display: inline-block;
+	margin: 0 2px 2px 0;
+}
+
+.social-links li a 
+{
+	width: 45px;
+	height: 45px;
+	display: block;
+	text-align: center;
+	font-size: 20px;
+	background: #e84c3d;
+	border: 1px solid #e84c3d;
+	color: #fff;
+}
+
+.social-links li a:hover 
+{
+	background-color: transparent;
+	border-color: #cd3c2e;
+	color: #cd3c2e;
+}
+
+.social-links li a i 
+{
+	line-height: 44px;
+}
+
+.header-top .social-links 
+{
+	margin: 0;
+}
+
+.header-top .social-links li 
+{
+	padding: 3px 5px 2px;
+	border-right: 1px solid #e3e3e3;
+	margin: 0;
+}
+
+.header-top .social-links li:hover
+{
+	background-color: #fafafa;
+}
+
+.header-top .social-links li a 
+{
+	font-size: 16px;
+}
+
+.header-top .social-links li:last-child 
+{
+	border-right: none;
+}
+
+.header-top .social-links li a 
+{
+	border: none;
+	width: 25px;
+	height: 30px;
+	color: #999999;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.header-top .social-links li a:hover 
+{
+	color: #cd3c2e;
+}
+.header-top .social-links li a i 
+{
+	line-height: 30px;
+}
+
+.social-links li.twitter a:hover,
+.colored.social-links li.twitter a 
+{
+	background-color: #55acee;
+	border-color: #55acee;
+	color: #fff;
+}
+.social-links li.skype a:hover,
+.colored.social-links li.skype a 
+{
+	background-color: #00aff0;
+	border-color: #00aff0;
+	color: #fff;
+}
+.social-links li.linkedin a:hover,
+.colored.social-links li.linkedin a 
+{
+	background-color: #0976b4;
+	border-color: #0976b4;
+	color: #fff;
+}
+.social-links li.googleplus a:hover,
+.colored.social-links li.googleplus a 
+{
+	background-color: #dd4b39;
+	border-color: #dd4b39;
+	color: #fff;
+}
+.social-links li.youtube a:hover,
+.colored.social-links li.youtube a 
+{
+	background-color: #b31217;
+	border-color: #b31217;
+	color: #fff;
+}
+.social-links li.flickr a:hover,
+.colored.social-links li.flickr a 
+{
+	background-color: #ff0084;
+	border-color: #ff0084;
+	color: #fff;
+}
+.social-links li.facebook a:hover,
+.colored.social-links li.facebook a 
+{
+	background-color: #3b5998;
+	border-color: #3b5998;
+	color: #fff;
+}
+.social-links li.pinterest a:hover,
+.colored.social-links li.pinterest a 
+{
+	background-color: #cb2027;
+	border-color: #cb2027;
+	color: #fff;
+}
+.social-links li.instagram a:hover,
+.colored.social-links li.instagram a 
+{
+	background-color: #517fa4;
+	border-color: #517fa4;
+	color: #fff;
+}
+.social-links li.vimeo a:hover,
+.colored.social-links li.vimeo a 
+{
+	background-color: #aad450;
+	border-color: #aad450;
+	color: #fff;
+}
+.social-links li.tumblr a:hover,
+.colored.social-links li.tumblr a 
+{
+	background-color: #32506d;
+	border-color: #32506d;
+	color: #fff;
+}
+.social-links li.soundcloud a:hover,
+.colored.social-links li.soundcloud a 
+{
+	background-color: #ff3a00;
+	border-color: #ff3a00;
+	color: #fff;
+}
+.social-links li.foursquare a:hover,
+.colored.social-links li.foursquare a 
+{
+	background-color: #0072b1;
+	border-color: #0072b1;
+	color: #fff;
+}
+.social-links li.dribbble a:hover,
+.colored.social-links li.dribbble a 
+{
+	background-color: #ea4c89;
+	border-color: #ea4c89;
+	color: #fff;
+}
+.social-links li.behance a:hover,
+.colored.social-links li.behance a 
+{
+	background-color: #053eff;
+	border-color: #053eff;
+	color: #fff;
+}
+.social-links li.vine a:hover,
+.colored.social-links li.vine a 
+{
+	background-color: #00a478;
+	border-color: #00a478;
+	color: #fff;
+}
+.social-links li.stumbleupon a:hover,
+.colored.social-links li.stumbleupon a 
+{
+	background-color: #f74425;
+	border-color: #f74425;
+	color: #fff;
+}
+.header-top .social-links li.twitter a:hover 
+{
+	color: #55acee;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.skype a:hover 
+{
+	color: #00aff0;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.linkedin a:hover 
+{
+	color: #0976b4;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.googleplus a:hover 
+{
+	color: #dd4b39;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.youtube a:hover 
+{
+	color: #b31217;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.flickr a:hover 
+{
+	color: #ff0084;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.facebook a:hover 
+{
+	color: #3b5998;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.pinterest a:hover 
+{
+	color: #cb2027;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.instagram a:hover 
+{
+	color: #517fa4;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.vimeo a:hover 
+{
+	color: #aad450;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.tumblr a:hover 
+{
+	color: #32506d;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.soundcloud a:hover 
+{
+	color: #ff3a00;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.foursquare a:hover 
+{
+	color: #0072b1;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.dribbble a:hover 
+{
+	color: #ea4c89;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.behance a:hover 
+{
+	color: #053eff;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.vine a:hover 
+{
+	color: #00a478;
+	background-color: transparent;
+	border-color: transparent;
+}
+.header-top .social-links li.stumbleupon a:hover 
+{
+	color: #f74425;
+	background-color: transparent;
+	border-color: transparent;
+}
+
+/* 4 Navigations
+----------------------------------------------------------------------------- */
+
+.navbar.navbar-default 
+{
+	border-radius: 0;
+	margin: 12px 0 5px;
+	background-color: #fafafa;
+	border-color: #f1f1f1;
+}
+
+.navbar-toggle.collapsed
+{
+	border-radius: 0;
+	border-color: #f1f1f1;
+}
+
+.navbar-toggle.collapsed:hover
+{
+	background-color: transparent;
+}
+
+.navbar-collapse.collapse
+{
+	border-radius: 0;
+	border-color: #f1f1f1;
+}
+
+.btn.dropdown-toggle
+{
+	border-radius: 0;
+	border-color: #f1f1f1;
+	background-color: transparent;
+}
+
+.dropdown-menu.dropdown-animation
+{
+	border-radius: 0;
+	border-color: #f1f1f1;
+}
+
+
+/* 5 Banner
+---------------------------------- */
+
+.banner 
+{
+	background-color: #f1f1f1;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.banner .btn.btn-default
+{
+	background: transparent;
+	color: white;
+	padding: 20px;
+	opacity: 0.5;
+	letter-spacing: 2px;
+	margin: 20px 0 0 0;
+	-webkit-box-shadow: 0px 5px 20px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 20px -2px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 20px -2px rgba(0,0,0,0.75);
+}
+
+.banner .btn.btn-default:hover
+{
+	opacity: 1;
+}
+
+.slider-banner-container 
+{
+	width: 100%;
+	position: relative;
+	padding: 0;
+	border-bottom: 1px solid;
+}
+
+.dark-translucent-bg
+{
+	background-position: 50% 0;
+	background-repeat: no-repeat;
+	z-index: 1;
+	position: relative;
+	-webkit-box-shadow: 0px 5px 20px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 5px 20px -2px rgba(0,0,0,0.75);
+	box-shadow: 0px 5px 20px -2px rgba(0,0,0,0.75);
+}
+
+.slider-banner-container .dark-translucent-bg 
+{
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0!important;
+	left: 0!important;
+	margin: 0!important;
+	bottom: 0!important;
+	text-align: center;
+}
+
+.slider-banner-container .dark-translucent-bg h1
+{
+	font-size: 96px;
+	color: #e84c3d;
+	font-weight: 700;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #000000;
+	padding: 70px 0 0 0;
+}
+
+.slider-banner-container .dark-translucent-bg p
+{
+	color: white;
+	letter-spacing: 5px;
+	font-size: 12px;
+	padding: 0px 200px;
+}

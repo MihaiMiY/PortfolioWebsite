@@ -1,0 +1,12 @@
+{% extends "blog/default.html" %}
+{% load staticfiles%}
+
+	{% block content %}
+	    {% for post in post_list %}
+	    	<div class="col-sm-6 col-md-12">
+	    	<br><br><br>
+	    		{{ post.title }}
+	    	</div>
+	    {% endfor %}
+
+	{% endblock %}

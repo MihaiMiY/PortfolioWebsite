@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Rohix Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load staticfiles %}
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static "blog/css/bootstrap.min.css" %}" type="text/css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static "blog/css/bootstrap-theme.min.css" %}" type="text/css">
+
+	<!-- Font Awesome-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+	<!-- Default CSS -->
+	<link rel="stylesheet" href="{% static "blog/css/custom.css" %}" type="text/css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<!-- Start Page Wrapper -->
+	<!-- ================== -->
+	<div class="page-wrapper">
+
+		<!-- Start Header Top -->
+		<!-- ================ -->
+		<div class="header-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2  col-sm-6">
+					<ul class="social-links clearfix hidden-xs">
+						<li class="twitter">
+							<a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li class="skype">
+							<a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a>
+						</li>
+						<li class="linkedin">
+							<a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+						</li>
+						<li class="googleplus">
+							<a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a>
+						</li>
+						<li class="youtube">
+							<a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a>
+						</li>
+						<li class="flickr">
+							<a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a>
+						</li>
+						<li class="facebook">
+							<a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li class="pinterest">
+							<a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a>
+						</li>
+					</ul>
+					<div class="social-links hidden-lg hidden-md hidden-sm">
+						<div class="btn-group dropdown">
+							<button type="button" class="btn dropdown-toggle" data-toggle="dropdown"><i class="fa fa-share-alt"></i></button>
+							<ul class="dropdown-menu dropdown-animation">
+								<li class="twitter">
+								<a target="_blank" href="http://www.twitter.com"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li class="skype">
+								<a target="_blank" href="http://www.skype.com"><i class="fa fa-skype"></i></a>
+								</li>
+								<li class="linkedin">
+								<a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a>
+								</li>
+								<li class="googleplus">
+								<a target="_blank" href="http://plus.google.com"><i class="fa fa-google-plus"></i></a>
+								</li>
+								<li class="youtube">
+								<a target="_blank" href="http://www.youtube.com"><i class="fa fa-youtube-play"></i></a>
+								</li>
+								<li class="flickr">
+								<a target="_blank" href="http://www.flickr.com"><i class="fa fa-flickr"></i></a>
+								</li>
+								<li class="facebook">
+								<a target="_blank" href="http://www.facebook.com"><i class="fa fa-facebook"></i></a>
+								</li>
+								<li class="pinterest">
+								<a target="_blank" href="http://www.pinterest.com"><i class="fa fa-pinterest"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<!-- End Header Top-->
+
+		<!-- Start Header Classes -->
+		<!-- ==================== -->
+		<div class="header fixed clearfix">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-md-3">
+
+					<!-- Start Header Left -->
+					<!-- ================= -->
+					<div class="header-left clearfix">
+						
+						<!-- Logo Area -->
+						<div class="logo">
+							
+						</div>
+
+						<!-- Slogan Area -->
+						<div class="slogan">
+							
+						</div>
+
+					</div>
+					<!-- End Header Left -->
+
+				</div>
+
+				<div class="col-md-9">
+
+					<!-- Start Header Right -->
+					<!-- =================  -->
+					<div class="header-right clearfix">
+						<nav class="navbar navbar-default">
+							<div class="container-fluid">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								 <div class="navbar-header">
+            						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					                <span class="sr-only">Toggle navigation</span>
+					                <span class="icon-bar"></span>
+					                <span class="icon-bar"></span>
+					                <span class="icon-bar"></span>
+					                </button>
+          						</div>
+          						<!-- Collect the nav links, forms, and other content for toggling -->
+								<div id="navbar" class="navbar-collapse collapse">
+									<ul class="nav navbar-nav">
+									{% for menu in menu_items %}
+										<li>
+											<a href="{{ menu.url }}">
+												<span class="{{ menu.image }}"></span>{{ menu.label }}</a>
+										</li>
+									{% endfor %}
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+					<!-- End Header Right -->
+
+				</div>
+
+			</div>
+		</div>
+		</div>
+		<!-- End Header -->
+
+		<!-- Start Banner -->
+		<!-- ===========  -->
+		<div class="banner">
+			<div class="slider-banner-container">
+				<!-- Main Image -->
+				<img src="{% static "blog/images/slide.jpg" %}"  alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+
+				<!-- Translucent Background -->
+				<div class="dark-translucent-bg" style="background-color:rgba(0,0,0,0.5);">
+					<h1>Rohix Blog</h1>
+					<p><b>Rohix</b> delivers comprehensive Web services ranging from custom website design to development of complex enterprise Web applications. We base our offerings — selected from a suite of dependable solutions — on an understanding of clients’ business requirements. We combine business domain knowledge with technology competence and proven methodologies to deliver high-quality, cost-effective results to maximize clients' competitive advantage and productivity.</p>
+					<a href="#" class="btn btn-default">Read more about us...</a>
+				</div>
+
+			</div>
+		</div>
+		<!-- End Banner -->
+
+		<!-- Start Content -->
+		<!-- ============  -->
+		<div class="content">
+
+			<div class="container">
+				<div class="row">
+					{% block content %}
+		        	{% endblock %}
+	        	</div>
+			</div>
+
+		</div>
+		<!-- End Content -->
+
+	</div>
+	<!-- End Page Wrapper -->
+
+
+	 <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
