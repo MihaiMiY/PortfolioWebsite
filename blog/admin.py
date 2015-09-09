@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Menu, Category
+from .models import Post, Menu, Category, UserProfile
 
 class PostAdmin(admin.ModelAdmin):
 	list_display = ('title', 'author','created_date', 'published_date', 'category')
@@ -16,3 +16,5 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Post, PostAdmin)
 admin.site.register(Menu, MenuAdmin)
 admin.site.register(Category, CategoryAdmin)
+
+admin.site.register(UserProfile)

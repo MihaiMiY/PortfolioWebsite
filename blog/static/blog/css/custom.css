@@ -13,6 +13,8 @@ File Description:Main CSS file of the template */
 3) Social Links
 4) Navigation
 5) Banner
+6) Content
+7) Footer
 */
 
 /* 1 Typography
@@ -22,7 +24,8 @@ File Description:Main CSS file of the template */
 
 html
 {
-	height: 100%;
+	position: relative;
+ 	min-height: 100%;
 }
 
 body
@@ -31,6 +34,7 @@ body
 	font-size: 15px;
 	color: #666666;
 	background-color: #ffffff;
+ 	margin-bottom: 100px; /* Margin bottom by footer height */
 }
 
 a, a:hover, a:active, a:before, a:visited, a:link
@@ -470,6 +474,12 @@ a, a:hover, a:active, a:before, a:visited, a:link
 	border-bottom: 1px solid;
 }
 
+.slider-banner-container img
+{
+	max-width: 100%;
+	height: 100%;
+}
+
 .dark-translucent-bg
 {
 	background-position: 50% 0;
@@ -510,4 +520,31 @@ a, a:hover, a:active, a:before, a:visited, a:link
 	letter-spacing: 5px;
 	font-size: 12px;
 	padding: 0px 200px;
+}
+
+/* 6 Content
+----------------------------------------------------------------------------- */
+
+.content
+{
+	padding: 0 0 50px 0;
+}
+
+/* 7 Footer
+----------------------------------------------------------------------------- */
+
+.footer 
+{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* Set the fixed height of the footer here */
+  background-color: #171717;
+  text-align: center;
+}
+
+.footer p
+{
+	margin: 50px 0 0 0;
+	color: white;
 }
