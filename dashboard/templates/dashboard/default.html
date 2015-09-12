@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load staticfiles %}
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{% static "blog/css/bootstrap.min.css" %}" type="text/css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="{% static "blog/css/bootstrap-theme.min.css" %}" type="text/css">
+
+	<!-- Font Awesome-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+	<!-- Default CSS -->
+	<link rel="stylesheet" href="{% static "dashboard/css/custom.css" %}" type="text/css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+<!-- Start Page Wrapper -->
+<!-- ================== -->
+<div class="page-wrapper">
+
+	<!-- Start Sidebar -->
+	<!-- ============= -->
+	<div class="sidebar">
+		<h3><a href="/dashboard">Dashboard</a></h3>
+		<ul>
+			{% for sidebar in sidebar_items %}
+	        <li><a href="{{ sidebar.url }}">{{ sidebar.label }}</a></li>
+	        {% endfor %}
+	        <li><a href="/blog">Go to webiste</a></li>
+		</ul>
+	</div>
+	<!-- End Sidebar -->
+
+
+	<!-- Start Content -->
+	<!-- ============= -->
+	<div class="content">
+		<div class="container">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</div>
+	<!-- End Content -->
+
+</div>
+<!-- End Page Wrapper -->
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

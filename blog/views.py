@@ -18,12 +18,3 @@ def post(request, post_id):
 
 def category(request, category_id):
 	return HttpResponse("You are looking at category %s." % category_id)
-
-def admin(request):
-	if request.user.is_authenticated():
-		return render(request, 'blog/admin/admin.html')
-	else:
-		return redirect('/blog/admin/login')
-
-def login(request):
-	return HttpResponse("Login")

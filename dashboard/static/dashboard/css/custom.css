@@ -1,0 +1,133 @@
+/* Theme Name: Rohix Dashboard
+Author: MihaiMiY
+Author URI: http://www.rohix.com
+Author e-mail: 
+Version: 1
+Created: September 2015
+File Description: Main CSS file of the dashboard template */
+
+/* TABLE OF CONTENTS
+
+1) Typography
+2) Label
+3) Sidebar
+
+*/
+
+/* 1 Typography
+----------------------------------------------------------------------------- */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic,800,800italic);
+
+html
+{
+ 	height: 100%;
+}
+
+body
+{
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	color: #666666;
+	background-color: #ffffff;
+}
+
+a, a:hover, a:active
+{
+	color: #666666;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, li, ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix 
+{
+  overflow: auto;
+  zoom: 1;
+}
+
+/* 2 Label
+----------------------------------------------------------------------------- */
+
+.page-wrapper
+{
+	height: 100%;
+}
+
+/* 2 Sidebar
+----------------------------------------------------------------------------- */
+
+.sidebar
+{
+	height: 100%;
+	float: left;
+	background-color: #222222;
+	color: white;
+	text-align: center;
+	border-right: 1px solid #E8E8E8;
+}
+
+.sidebar ul
+{
+	list-style: none;
+	padding: 50px 0;
+}
+
+.sidebar ul li
+{
+	border-bottom: 1px solid #404040;
+	padding: 15px 75px;
+}
+
+.sidebar a
+{
+	color: white;
+}
+
+.sidebar h3
+{
+	padding: 20px 0;
+	border-bottom: 1px solid #404040;
+}
+
+/* 3 Content
+----------------------------------------------------------------------------- */
+
+.content
+{
+	float: left;
+	width: 75%;
+}
+
+/* 4 Post
+----------------------------------------------------------------------------- */
+
+.table
+{
+	width: 80%;
+}
+
+.post-form
+{
+	width: 50%;
+}
+
+.post-form h1
+{
+	padding: 20px;
+}
+
+.post-form .field
+{
+	padding: 5px 20px;
+}
+
+.post-form .field button
+{
+	width: 200px;
+}

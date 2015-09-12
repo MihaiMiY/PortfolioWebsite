@@ -1,0 +1,43 @@
+{% extends "dashboard/default.html" %}
+{% load staticfiles%}
+
+{% block content %}
+
+<div class="jumbotron">
+    <div class="container">
+	    <h1>Manage your post</h1>
+	    <p>Here you can edit, delete your post!</p>
+	    <p><a class="btn btn-primary btn-lg" href="new" role="button">Create new post</a></p>
+    </div>
+</div>
+
+<div class="container">
+	<div class="table-responsive">   
+    <table class="table">
+	    <thead>
+	        <tr>
+	        	<th>Title</th>
+	        	<th>Category</th>
+	        	<th>Author</th>
+	        	<th>Created date</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+		{% for post in post_list %}
+		    <tr>
+		    	<td>{{ post.title }}</td>
+		        <td>{{ post.category }}</td>
+		        <td>{{ post.author }}</td>
+		        <td>{{ post.created_date }}</td>
+		        <td><a href="edit/{{post.id}}">Edit</a></td>
+		        <td>Delete</td>
+		    </tr>
+		{% endfor %}
+		</tbody>
+	</table>
+	</div>
+</div>
+
+
+
+{% endblock %}

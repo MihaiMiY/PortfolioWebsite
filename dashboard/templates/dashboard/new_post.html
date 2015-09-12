@@ -1,0 +1,29 @@
+{% extends "dashboard/default.html" %}
+{% load staticfiles%}
+
+{% block content %}
+
+<form method="POST" class="post-form">
+{% csrf_token %}
+	<h1>Create a new post</h1>
+	<div class="field">
+		<label for="title">Title:</label><br>
+		<p class="text-danger">{{ form.title.errors }}</p>
+    	{{ form.title }}
+    </div>
+    <div class="field">
+		<label for="content">Content:</label><br>
+		{{ form.text.errors }}
+    	{{ form.text }}
+    </div>
+    <div class="field">
+		<label for="category">Category:</label><br>
+		{{ form.category.errors }}
+    	{{ form.category }}
+    </div>
+    <div class="field">
+    	<button type="submit" class="save btn btn-default">Save</button>
+    </div>
+</form>
+
+{% endblock %}
