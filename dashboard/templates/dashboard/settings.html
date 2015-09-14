@@ -8,6 +8,29 @@
         <h1>General settings</h1>
         <p><i>Change website settings</i></p>
       </div>
+</div>
+
+<form method="POST" class="post-form">
+{% csrf_token %}
+	<h1>Title settings</h1>
+	<div class="field">
+		<label for="title">Title:</label><br>
+		<p class="text-danger">{{ form.title.errors }}</p>
+    	{{ form.title }}
     </div>
+    <div class="field">
+		<label for="slug">Slug:</label><br>
+		{{ form.slug.errors }}
+    	{{ form.slug }}
+    </div>
+    <div class="field">
+		<label for="description">Description:</label><br>
+		{{ form.description.errors }}
+    	{{ form.description }}
+    </div>
+    <div class="field">
+    	<button type="submit" class="save btn btn-default">Save</button>
+    </div>
+</form>
 
 {% endblock %}

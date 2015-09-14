@@ -1,13 +1,21 @@
 {% extends "blog/default.html" %}
+{% load staticfiles %}
 
-    {% block content %}
+{% block title %}
 
-        <div class="view-post">
-            <h1>{{ post.title }}</h1>
-            <p id="author">Author: {{ post.author }}</p>
-            <p id="content">{{ post.text }}</p>
-            <p id="published-date">Published date: {{ post.published_date }}</p>
-            <p id="category">Category: {{ post.category }}</p>
-        </div>
+	{{ post.title }}
 
-    {% endblock %}
+{% endblock %}
+
+{% block content %}
+
+    <div class="view-post">
+        <h1>{{ post.title }}</h1>
+        <p>Author: {{ post.author }}</p>
+        <p>{{ post.text }}</p>
+        <p>Published date: {{ post.published_date }}</p>
+        <p>Category: {{ post.category }}</p>
+        <p><a href="/dashboard/post/edit/{{ post.id }}">Edit post</p>
+    </div>
+
+{% endblock %}

@@ -1,12 +1,27 @@
 {% extends "blog/default.html" %}
-{% load staticfiles%}
+{% load staticfiles %}
 
-	{% block content %}
-	    {% for post in post_list %}
-	    	<div class="col-sm-6 col-md-12">
-	    	<br><br><br>
-	    		{{ post.title }}
+{% block title %}
+
+	{{ settings.title }} - {{ settings.slug }}
+
+{% endblock %}
+
+{% block content %}
+	{% for post in post_list %}
+	   	<div class="col-sm-6 col-md-12">
+	   		<div class="box-wrapper">
+	   			<div class="box-header">
+	    			<h1><a href="post/{{ post.id }}">{{ post.title }}</a></h1>
+	    		</div>
+	    		<div class="box-body">
+	    			<p>{{ post.text }}</p>
+	    		</div>
+	    		<div class="box-footer">
+	    			<p class="category">Category: {{ post.category }}</p>
+	    			<p class="published-date">Published date: {{ post.published_date }}</p>
+	    		</div>
 	    	</div>
-	    {% endfor %}
-
-	{% endblock %}
+	    </div>
+	{% endfor %}
+{% endblock %}

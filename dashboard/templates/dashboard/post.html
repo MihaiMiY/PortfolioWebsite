@@ -5,8 +5,8 @@
 
 <div class="jumbotron">
     <div class="container">
-	    <h1>Manage your post</h1>
-	    <p>Here you can edit, delete your post!</p>
+	    <h1>Post settings</h1>
+	    <p>General post settings and a simple way to manage them</p>
 	    <p><a class="btn btn-primary btn-lg" href="new" role="button">Create new post</a></p>
     </div>
 </div>
@@ -29,8 +29,9 @@
 		        <td>{{ post.category }}</td>
 		        <td>{{ post.author }}</td>
 		        <td>{{ post.created_date }}</td>
-		        <td><a href="edit/{{post.id}}">Edit</a></td>
-		        <td>Delete</td>
+		        <td><a href="edit/{{ post.id }}">Edit</a></td>
+		        <td><a href="delete/{{ post.id }}">Delete</td>
+		        <td><a href="/blog/post/{{ post.id }}">View post</a></td>
 		    </tr>
 		{% endfor %}
 		</tbody>

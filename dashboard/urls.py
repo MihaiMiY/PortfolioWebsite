@@ -12,6 +12,10 @@ urlpatterns = [
     url(r'^post/new/$', views.new_post, name="new_post"),
     # Ex: /dashboard/post/edit/5
     url(r'^post/edit/(?P<post_id>[0-9]+)/$', views.edit_post, name='edit_post'),
+    # Ex: /dashboard/post/delete/5
+    url(r'^post/delete/(?P<post_id>[0-9]+)/$', views.delete_post, name='delete_post'),
     # Ex: /dashboard/menu
     url(r'^menu/$', views.menu, name="menu"),
+    # Ex: /dashboard/categories
+    url(r'^categories/$', views.category, name="category"),
 ]

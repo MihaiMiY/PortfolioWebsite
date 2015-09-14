@@ -2,8 +2,9 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <title>Rohix Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% block title %} {% endblock %}</title>
 
     {% load staticfiles %}
     <!-- Latest compiled and minified CSS -->
@@ -169,18 +170,6 @@
 		<!-- Start Banner -->
 		<!-- ===========  -->
 		<div class="banner">
-			<div class="slider-banner-container">
-				<!-- Main Image -->
-				<img src="{% static "blog/images/slide.jpg" %}"  alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-
-				<!-- Translucent Background -->
-				<div class="dark-translucent-bg" style="background-color:rgba(0,0,0,0.5);">
-					<h1>Rohix Blog</h1>
-					<p><b>Rohix</b> delivers comprehensive Web services ranging from custom website design to development of complex enterprise Web applications. We base our offerings — selected from a suite of dependable solutions — on an understanding of clients’ business requirements. We combine business domain knowledge with technology competence and proven methodologies to deliver high-quality, cost-effective results to maximize clients' competitive advantage and productivity.</p>
-					<a href="#" class="btn btn-default">Read more about us...</a>
-				</div>
-
-			</div>
 		</div>
 		<!-- End Banner -->
 
